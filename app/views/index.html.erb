@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <h2>Vine Matchmaker</h2>
+  <p>Vine might be dead but the culture is still alive</p>
+  <p><strong>Tip:</strong> The w3-button class can be used to style the close button (x):</p>
+</div>
+
+<div class="w3-bar w3-black">
+
+ <button class="w3-bar-item w3-button" onclick="openCatagory('Home')">Home</button>
+ <button class="w3-bar-item w3-button" onclick="openCatagory('Memes')">Memes</button>
+  <button class="w3-bar-item w3-button" onclick="openCatagory('Mainstream')">Mainstream</button>
+  <button class="w3-bar-item w3-button" onclick="openCatagory('Happy')">Happy</button>
+  <button class="w3-bar-item w3-button"
+  
+  onclick="openCatagory('Laugh')">Laugh</button>
+  <button class="w3-bar-item w3-button" onclick="openCatagory('Veteran')">Veteran</button>
+  <button class="w3-bar-item w3-button" onclick="openCatagory('Relatable')">Relatable</button>
+  <button class="w3-bar-item w3-button" onclick="openCatagory('PickMeUp')">PickMeUp</button>
+  
+</div>
+
+<div id="Home" class="w3-container w3-display-container catagory">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>Home</h2>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Memes" class="w3-container w3-display-container catagory">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>Memes</h2>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Mainstream" class="w3-container w3-display-container catagory" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>Maistream</h2>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Happy" class="w3-container w3-display-container catagory" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>Happy</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Laugh" class="w3-container w3-display-container catagory" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>Laugh</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Veteran" class="w3-container w3-display-container catagory" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>Veteran</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Relatable" class="w3-container w3-display-container catagory" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>Relatable</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="PickMeUp" class="w3-container w3-display-container catagory" style="display:none">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-large w3-display-topright">&times;</span>
+  <h2>PickMeUp</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCatagory(catagoryName) {
+    var i;
+    var x = document.getElementsByClassName("catagory");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(catagoryName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
